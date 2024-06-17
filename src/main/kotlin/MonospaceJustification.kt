@@ -14,13 +14,13 @@ private fun paddedText(text: String, width: Int): String {
     var textLength = text.length
     return text.split(" ")
         .joinToString(" ") {
-        if (textSmallerThanWidth(width, textLength)) {
-            textLength++
-            it.padEnd(it.length + 1, ' ')
-        } else {
-            it
+            if (textSmallerThanWidth(width, textLength)) {
+                textLength++
+                it.padEnd(it.length + 1, ' ')
+            } else {
+                it
+            }
         }
-    }
 }
 
 private fun textSmallerThanWidth(width: Int, textLength: Int) = width > textLength
