@@ -16,7 +16,7 @@ class MonospaceJustificationKtTest {
 
 
     @Test
-    fun `text fits into one row with 1 extra gap added`() {
+    fun `text fits into one row with extra space`() {
         //Given
         val content = """Moin, ich bin Paul und code heute mit Osman"""
         val width = 46
